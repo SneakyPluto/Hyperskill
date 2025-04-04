@@ -9,13 +9,15 @@ public class Main {
     // Method to update vehicle status
     public void updateVehicleStatus(String id, float newSpeed, float newFuelLevel) {
         // Implement the logic to update vehicle status here
-        //
+        vehicleId = id;
+        speed = newSpeed;
+        fuelLevel = newFuelLevel;
     }
 
     // Method to display vehicle status
     public String getVehicleStatus() {
         // Implement the logic to return formatted vehicle status here
-        return "";
+        return String.format("Vehicle %s: Speed = %.1f km/h, Fuel = %.1f%%", vehicleId, speed, fuelLevel);
     }
 
     public static void main(String[] args) {
