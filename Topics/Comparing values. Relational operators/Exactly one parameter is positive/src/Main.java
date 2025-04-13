@@ -23,5 +23,20 @@ class Main {
         boolean result = (positiveCount == 1);
         System.out.println(result);
     }
-
 }
+// Alternative way to write the same functionality but DRY (don't repeat yourself)
+//class Main {
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        // put your code here
+//        int countOfPositives = 0;
+//
+//        for (int i = 0; i < 3; i++) {
+//            if (scanner.nextInt() > 0) {
+//                countOfPositives++;
+//            }
+//        }
+//
+//        System.out.println(countOfPositives == 1);
+//    }
+//}
